@@ -38,6 +38,12 @@ const todos: Todo[] = [
     toDoCatagory: "Test",
     toDoCompleted: true,
   },
+  {
+    toDoId: "5",
+    toDoTitle: "Feed the cat",
+    toDoCatagory: "Household",
+    toDoCompleted: false,
+  },
 ]
 
 async function getTodos(req: NextApiRequest, res: NextApiResponse) {
