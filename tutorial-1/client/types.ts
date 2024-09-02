@@ -4,3 +4,10 @@ export type Todo = {
   toDoCatagory: string
   toDoCompleted: boolean
 }
+
+export type Family = {
+  familyId: string
+  familyName: string
+  familyAge: number
+  familyGender: string
+}
