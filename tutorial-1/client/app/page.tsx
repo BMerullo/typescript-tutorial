@@ -1,9 +1,10 @@
 "use client"
-
 import type { Todo } from "@/types"
 import type { Family } from "@/types"
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
+import styles from "./page/page.module.scss"
 
 export default function Home() {
   const [todos, setTodos] = useState<Todo[]>([])
@@ -21,7 +22,13 @@ export default function Home() {
     }
     fetchFamily()
   }, [])
+  const router = useRouter()
+
+  const navigateToAbout = () => {
+    router.push("/about")
+  }
   console.log(todos, "HERE ARE MY TODOS")
+  console.log(family, "HERE IS FAMILY")
   return (
     <div className="flex flex-col w-full justify-center items-center min-h-screen">
       List Page
@@ -74,6 +81,11 @@ export default function Home() {
             </div>
           </>
         ))}
+      </div>
+      <div className={styles.btnContainer}>
+        <button className={styles.btn} onClick={navigateToAbout}>
+          Go to About
+        </button>
       </div>
     </div>
   )

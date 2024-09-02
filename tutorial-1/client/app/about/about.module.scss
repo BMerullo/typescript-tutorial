@@ -1,0 +1,14 @@
+.gradient {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, blue, #5d6cf5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.test {
+  font-size: 3rem;
+  font-weight: bold;
+}
