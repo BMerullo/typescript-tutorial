@@ -1,3 +1,7 @@
+.header {
+  padding: 0 100px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -11,9 +15,10 @@
 }
 
 .gradient {
+  height: 100vh;
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(45deg, blue, rgb(52, 255, 2));
+  background: linear-gradient(to bottom, #2664e9, #02fd45);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -27,7 +32,7 @@
 .link {
   padding: 0 10px;
   &:hover {
-    background: linear-gradient(45deg, blue, rgb(52, 255, 2));
+    background: linear-gradient(to bottom, white, #fbb205);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

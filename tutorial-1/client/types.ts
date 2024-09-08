@@ -11,3 +11,7 @@ export type Family = {
   familyAge: number
   familyGender: string
 }
+
+type FullScreenHeroProps = {
+  heroImg: string
+}
