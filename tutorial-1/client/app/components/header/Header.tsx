@@ -18,19 +18,27 @@ const Header = () => {
   const navigateToFamily = () => {
     router.push("/family")
   }
+  const navigateToPokedex = () => {
+    router.push("/pokedex")
+  }
+  const navigateToTailwind = () => {
+    router.push("/tailwind")
+  }
   return (
     <header className={styles.header}>
       <section className={styles.nav}>
         <button onClick={navigateToHome}>
-          <h1 className={styles.title}>
-            BOB'S INTERNET{" "}
-            <span className={styles.gradient}>EXTRAVAGANZA!</span>
-          </h1>
+          <h1 className={styles.gradient}>Sandbox</h1>
         </button>
         <article className={styles.linkContainer}>
           <button onClick={navigateToAbout}>
             <div className={styles.link}>
               <h3>About</h3>
+            </div>
+          </button>
+          <button onClick={navigateToPokedex}>
+            <div className={styles.link}>
+              <h3>Pokedex</h3>
             </div>
           </button>
           <button onClick={navigateToTodos}>
@@ -41,6 +49,11 @@ const Header = () => {
           <button onClick={navigateToFamily}>
             <div className={styles.link}>
               <h3>Family</h3>
+            </div>
+          </button>
+          <button onClick={navigateToTailwind}>
+            <div className={styles.link}>
+              <h3>Tailwind</h3>
             </div>
           </button>
         </article>
