@@ -18,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" py-4 text-center">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className=" py-4 text-center min-h-screen">
         <Header />
         <main className="flex-grow min-h-screen">{children}</main>
         <Footer />

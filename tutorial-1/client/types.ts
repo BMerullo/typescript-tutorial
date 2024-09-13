@@ -15,3 +15,5 @@ export type Family = {
 type FullScreenHeroProps = {
   heroImg: string
 }
+
+type hamburger = string
