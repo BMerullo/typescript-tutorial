@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import axios from "axios"
 import styles from "../family/family.module.scss"
+import HamburgerMenu from "../components/Hamburger-Menu/HamburgerMenu"
 
 const family = () => {
   const [family, setFamily] = useState<Family[]>([])
