@@ -12,8 +12,9 @@ export type Family = {
   familyGender: string
 }
 
-type FullScreenHeroProps = {
-  heroImg: string
+export interface PokemonSpecies {
+  name: string
+  url: string
 }
 
-type hamburger = string
+export type PokedexSpecies = PokemonSpecies[]
