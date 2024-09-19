@@ -4,7 +4,7 @@ import PokedexList from "../components/PokedexList"
 
 const pokedex = async () => {
   const heroImg =
-    "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/the-15-best-starting-pokemon-of-the-series.jpg"
+    "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/09/20/1331818966444_2/pok%C3%A9mon-super-mystery-dungeon"
 
   const pokedexResponse = await fetch(
     "https://pokeapi.co/api/v2/pokemon-species"
