@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "typescript",
+      "tsconfig": "tutorial-2/hello-world/tsconfig.json",
+      "problemMatcher": ["$tsc"],
+      "group": "build",
+      "label": "tsc: build - tutorial-2/hello-world/tsconfig.json"
+    }
+  ]
+}
