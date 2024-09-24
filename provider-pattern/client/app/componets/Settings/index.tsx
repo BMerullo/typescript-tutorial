@@ -7,20 +7,24 @@ const Settings: React.FC = () => {
   const updateUser = () => {
     setUser({
       id: 1,
-      name: "Jane Doe",
-      email: "janedoe@example.com",
+      name: "Bob Merullo",
+      email: "bob@gmail.com",
     })
   }
 
   return (
-    <div className="p-4 bg-gray-100 rounded-lg">
-      <h2 className="text-2xl font-bold text-black">Settings</h2>
-      <button
-        onClick={updateUser}
-        className="mt-2 px-4 py-2 bg-blue-500 text-white-rounded"
-      >
-        Update User Data
-      </button>
+    <div className="p-4 bg-gray-100 rounded-lg ">
+      <div className=" flex justify-center">
+        <h2 className="text-2xl font-bold text-black">Settings</h2>
+      </div>
+      <div className="flex justify-center">
+        <button
+          onClick={updateUser}
+          className="mt-2 px-4 py-2 bg-blue-500 text-white-rounded "
+        >
+          Update User Data
+        </button>
+      </div>
     </div>
   )
 }
