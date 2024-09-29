@@ -1,18 +1,12 @@
 import React, { useState, ChangeEvent, FormEvent } from "react"
-import { useUser } from "../hooks/useUser"
-
-// Step 1: Define the User type
-interface User {
-  id: number
-  name: string
-  email: string
-}
+import { useUser } from "../../hooks/useUser"
+import { UserI } from "../../types/User"
 
 const Settings: React.FC = () => {
   const { setUser } = useUser() // Assume useUser is typed elsewhere
 
   // Step 2: Define the form data type
-  const [formData, setFormData] = useState<Omit<User, "id"> & { id: string }>({
+  const [formData, setFormData] = useState<Omit<UserI, "id"> & { id: string }>({
     id: "",
     name: "",
     email: "",

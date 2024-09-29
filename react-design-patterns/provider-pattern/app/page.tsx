@@ -2,7 +2,7 @@
 
 import Profile from "./components/Profile"
 import { UserProvider } from "./context/UserContext"
-import Settings from "./settings"
+import Settings from "./components/settings"
 
 export default function Home() {
   return (
