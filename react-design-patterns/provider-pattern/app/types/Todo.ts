@@ -3,3 +3,7 @@ export interface Todo {
   item: string
   complete: boolean
 }
+
+export interface AddTodo {
+  addTodo: boolean
+}

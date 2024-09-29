@@ -2,14 +2,21 @@
 
 import React, { useState } from "react"
 import { Todo } from "@/app/types/Todo"
+import { useTodo } from "@/app/hooks/useTodo"
 
 const TodoForm: React.FC = () => {
   const [category, setCategory] = useState("")
   const [item, setItem] = useState("")
   const [message, setMessage] = useState("")
+  const { addTodo, setAddTodo } = useTodo()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (!category || !item) {
+      alert("Please fill out all fields")
+      return
+    }
 
     const newTodo: Todo = {
       category,
@@ -27,7 +34,7 @@ const TodoForm: React.FC = () => {
 
     const data = await response.json()
     setMessage(data.message)
-
+    setAddTodo(!addTodo)
     setCategory("")
     setItem("")
   }
@@ -47,7 +54,7 @@ const TodoForm: React.FC = () => {
           />
         </div>
         <div className="p-8 ">
-          <label htmlFor="category">Category:</label>
+          <label htmlFor="category">Task:</label>
           <input
             className="text-black"
             type="text"

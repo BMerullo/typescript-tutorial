@@ -1,17 +1,12 @@
 [
   {
+    "category": "Kitchen",
+    "item": "Clean the dishes",
+    "complete": false
+  },
+  {
     "category": "Test",
     "item": "A new todo",
-    "complete": false
-  },
-  {
-    "category": "Test ",
-    "item": "Another Todo",
-    "complete": false
-  },
-  {
-    "category": "Kitchen",
-    "item": "Do the dishes",
     "complete": false
   }
 ]
