@@ -33,21 +33,23 @@ const TodoForm: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="bg-gray-900">
       <h1>Add a New Todo</h1>
       <form onSubmit={handleSubmit}>
-        <div className="p-8 text-black">
+        <div className="p-8 ">
           <label htmlFor="category">Category:</label>
           <input
+            className="text-black"
             type="text"
             id="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           />
         </div>
-        <div className="p-8 text-black">
+        <div className="p-8 ">
           <label htmlFor="category">Category:</label>
           <input
+            className="text-black"
             type="text"
             id="item"
             value={item}

@@ -8,5 +8,10 @@
     "category": "Test ",
     "item": "Another Todo",
     "complete": false
+  },
+  {
+    "category": "Kitchen",
+    "item": "Do the dishes",
+    "complete": false
   }
 ]
