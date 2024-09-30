@@ -24,18 +24,25 @@ const GameList = () => {
     fetchGame()
   }, [addGame])
   return (
-    <div>
-      <h1>Listed Games</h1>
-      <ul>
+    <>
+      <section className=" p-9  md:p-20 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
         {games.map((game, index) => (
-          <li key={index}>
-            <h3>{game.category}</h3>
-            <h4>{game.gameTitle}</h4>
-            <img src={game.img} alt={game.gameTitle} />
-          </li>
+          <div key={index}>
+            <div className="w-100 h-64 overflow-hidden bg-gray-200 rounded-lg">
+              <img
+                className="w-full h-full object-cover "
+                src={game.img}
+                alt={game.gameTitle}
+              />
+            </div>
+            <div className="text-white  mt-8 rounded-md">
+              <h2>{game.gameTitle}</h2>
+              <h3>{game.category}</h3>
+            </div>
+          </div>
         ))}
-      </ul>
-    </div>
+      </section>
+    </>
   )
 }
 
