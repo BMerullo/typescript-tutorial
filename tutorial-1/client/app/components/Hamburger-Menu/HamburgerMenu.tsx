@@ -52,16 +52,16 @@ const HamburgerMenu: React.FC = () => {
             </li>
             <li
               className={`${styles.link} ${
-                pathname === "/about" ? styles.active : ""
+                pathname === "/games" ? styles.active : ""
               }`}
             >
-              <Link href="/about" onClick={closeMenu}>
+              <Link href="/games" onClick={closeMenu}>
                 <h3
                   className={`${styles.link} ${
-                    pathname === "/about" ? styles.active : ""
+                    pathname === "/games" ? styles.active : ""
                   }`}
                 >
-                  About
+                  Games
                 </h3>
               </Link>
             </li>
