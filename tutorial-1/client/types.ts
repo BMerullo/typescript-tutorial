@@ -12,9 +12,23 @@ export type Family = {
   familyGender: string
 }
 
+//Pokemon Page
+
 export interface PokemonSpecies {
   name: string
   url: string
 }
 
 export type PokedexSpecies = PokemonSpecies[]
+
+//Game Page
+
+export interface Game {
+  category: string
+  gameTitle: string
+  img: string
+}
+
+export interface AddGame {
+  addGame: boolean
+}

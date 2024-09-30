@@ -1,7 +1,4 @@
 import React from "react"
-import styles from "./about.module.scss"
-import { Family } from "@/types"
-import axios from "axios"
 import FullScreenHero from "../components/Full-screen-hero/full-screen-hero"
 
 const about = () => {

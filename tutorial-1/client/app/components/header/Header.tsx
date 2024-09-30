@@ -34,10 +34,10 @@ const Header = () => {
             <h3 className={styles.link}>Home</h3>
           </Link>
           <Link
-            href="/about"
-            className={`px-5 ${pathname === "/about" ? styles.active : ""}`}
+            href="/games"
+            className={`px-5 ${pathname === "/games" ? styles.active : ""}`}
           >
-            <h3 className={styles.link}>About</h3>
+            <h3 className={styles.link}>Games</h3>
           </Link>
           <Link
             href="/pokedex"
