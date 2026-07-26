@@ -59,12 +59,14 @@ const GameForm: React.FC = () => {
             >
               <option value="">Select a Category</option>
               <option value="Action/ Adventure">Action/ Adventure</option>
-              <option value="RPG">RPG</option>
-              <option value="Shooter">Shooter</option>
-              <option value="Strategy">Strategy</option>
+              <option value="Fighting">Fighting</option>
               <option value="Platform">Platform</option>
               <option value="Racing">Racing</option>
+              <option value="RPG">RPG</option>
+              <option value="RTS">RTS</option>
+              <option value="Shooter">Shooter</option>
               <option value="Sports">Sports</option>
+              <option value="Strategy">Strategy</option>
             </select>
           </div>
           <div className="flex flex-col mt-2">

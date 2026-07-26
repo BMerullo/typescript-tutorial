@@ -1,6 +1,6 @@
 import React from "react"
-import FullScreenHero from "../components/Full-screen-hero/full-screen-hero"
-import PokedexList from "../components/PokedexList"
+import FullScreenHero from "../components/Full-screen-hero"
+import PokedexList from "../components/Pokemon/PokedexList"
 
 const pokedex = async () => {
   const heroImg =

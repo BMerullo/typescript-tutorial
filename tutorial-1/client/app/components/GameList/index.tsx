@@ -16,6 +16,7 @@ const GameList = () => {
         const data: Game[] = await response.json()
         setGames(data)
         setLoading(false)
+        console.log("Hello")
       } catch (error) {
         console.error("Failed to fetch game", error)
         setLoading(false)

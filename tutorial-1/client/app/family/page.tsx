@@ -7,7 +7,7 @@ import axios from "axios"
 import styles from "../family/family.module.scss"
 import HamburgerMenu from "../components/Hamburger-Menu/HamburgerMenu"
 
-const family = () => {
+const Family = () => {
   const [family, setFamily] = useState<Family[]>([])
   const router = useRouter()
 
@@ -49,6 +49,7 @@ const family = () => {
           </>
         ))}
       </div>
+
       <div className={styles.btnContainer}>
         <button className={styles.btn} onClick={navigateToHome}>
           Home
@@ -58,4 +59,4 @@ const family = () => {
   )
 }
 
-export default family
+export default Family

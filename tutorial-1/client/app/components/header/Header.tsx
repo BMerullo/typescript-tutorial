@@ -24,7 +24,7 @@ const Header = () => {
       </button>
       <nav className="text-xl">
         <div
-          className=" hidden md:hidden lg:block lg:flex 
+          className=" hidden md:hidden  lg:flex 
             "
         >
           <Link
@@ -58,10 +58,10 @@ const Header = () => {
             <h3 className={styles.link}>Family</h3>
           </Link>
           <Link
-            href="/tailwind"
-            className={`px-5 ${pathname === "/tailwind" ? styles.active : ""}`}
+            href="/calculator"
+            className={`px-5 ${pathname === "/calculator" ? styles.active : ""}`}
           >
-            <h3 className={styles.link}>Tailwind</h3>
+            <h3 className={styles.link}>Calculator</h3>
           </Link>
         </div>
       </nav>

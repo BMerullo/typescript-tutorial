@@ -32,3 +32,15 @@ export interface Game {
 export interface AddGame {
   addGame: boolean
 }
+
+//User
+
+export interface UserI {
+  id: number
+  name: string
+  email: string
+}
+
+export interface PressEvent {
+  value: string
+}

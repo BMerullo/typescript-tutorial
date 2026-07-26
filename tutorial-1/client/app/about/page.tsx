@@ -1,5 +1,5 @@
 import React from "react"
-import FullScreenHero from "../components/Full-screen-hero/full-screen-hero"
+import FullScreenHero from "../components/Full-screen-hero"
 
 const about = () => {
   const heroImg =

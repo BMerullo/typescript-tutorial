@@ -1,12 +1,12 @@
 "use client"
 
 import React from "react"
-import FullScreenHero from "../components/Full-screen-hero/full-screen-hero"
+import FullScreenHero from "../components/Full-screen-hero"
 import GameForm from "../components/GameForm"
 import GameList from "../components/GameList"
 import { GameProvider } from "../context/GamesContext"
 
-const games = () => {
+const Games = () => {
   const heroImg = "https://wallpapercave.com/wp/wp2276152.jpg"
 
   return (
@@ -18,4 +18,4 @@ const games = () => {
   )
 }
 
-export default games
+export default Games

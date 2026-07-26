@@ -1,3 +1,5 @@
+"use client"
+
 import React, { createContext, useState, ReactNode } from "react"
 import { Game, AddGame } from "../../types"
 

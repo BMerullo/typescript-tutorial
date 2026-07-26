@@ -5,8 +5,13 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import axios from "axios"
 import styles from "../todo/todo.module.scss"
+import { GameProvider } from "../context/GamesContext"
+import GameList from "../components/GameList"
+import { UserProvider } from "../context/UserContext"
+import Profile from "../components/Profile"
+import Settings from "../components/Settings"
 
-const todo = () => {
+const Todo = () => {
   const [todos, setTodos] = useState<Todo[]>([])
   const router = useRouter()
 
@@ -55,8 +60,17 @@ const todo = () => {
           Home
         </button>
       </div>
+      <GameProvider>
+        <GameList />
+      </GameProvider>
+      <UserProvider>
+        <div className="flex">
+          <Profile />
+          <Settings />
+        </div>
+      </UserProvider>
     </div>
   )
 }
 
-export default todo
+export default Todo

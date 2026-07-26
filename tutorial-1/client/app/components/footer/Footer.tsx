@@ -3,7 +3,7 @@ import React from "react"
 
 const footer = () => {
   return (
-    <footer>
+    <footer className="bg-blue-700 h-[10vh]">
       <h1>THIS IS THE FOOTER</h1>
     </footer>
   )
